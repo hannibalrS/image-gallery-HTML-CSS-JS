@@ -15,3 +15,21 @@ function upDate(previewPic){
       */
           
       }
+
+      function initializeGallery() {
+        // Selecciona todas las imágenes con la clase "preview"
+        let images = document.querySelectorAll('.preview');
+    
+        // Recorre todas las imágenes y les agrega tabindex dinámicamente
+        images.forEach((img, index) => {
+            img.setAttribute('tabindex', index + 1);
+            console.log("Added tabindex to image " + (index + 1));
+        });
+    
+        // Puedes agregar otros inicializadores aquí si es necesario
+        console.log("Galería inicializada.");
+    }
+    
+    // Llama a la función de inicialización cuando la página se carga
+    window.onload = initializeGallery;
+    

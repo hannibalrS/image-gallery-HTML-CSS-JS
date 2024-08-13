@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="css/gallery.css">
-	<script src = "js/gallery.js"></script>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/gallery.js"></script>
 </head>
-<body>
-	
-	<div id = "image">
-		Hover over an image below to display here.
-	</div>
-	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+<body onload="initializeGallery()">
+    
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+    
+    <img class="preview" alt="Styling with a Bandana" 
+         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" 
+         onmouseover="upDate(this)" onmouseout="unDo()" 
+         onfocus="upDate(this)" onblur="unDo()" tabindex="1">
+    
+    <img class="preview" alt="With My Boy" 
+         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" 
+         onmouseover="upDate(this)" onmouseout="unDo()" 
+         onfocus="upDate(this)" onblur="unDo()" tabindex="2">
+    
+    <img class="preview" alt="Young Puppy" 
+         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
+         onmouseover="upDate(this)" onmouseout="unDo()" 
+         onfocus="upDate(this)" onblur="unDo()" tabindex="3">
 
+    <img class="preview" alt="Scenic Landscape" 
+         src="https://services.meteored.com/img/article/la-voz-humana-un-sonido-mas-terrorifico-para-los-animales-que-el-rugido-de-un-leon-1696867317845_1024.jpg" 
+         onmouseover="upDate(this)" onmouseout="unDo()" 
+         onfocus="upDate(this)" onblur="unDo()" tabindex="4">
+
+    <img class="preview" alt="Horse in Field" 
+         src="https://www.ociocaballo.com/wp-content/uploads/2020/05/articulo_055.jpg" 
+         onmouseover="upDate(this)" onmouseout="unDo()" 
+         onfocus="upDate(this)" onblur="unDo()" tabindex="5">
+
+    <img class="preview" alt="Tiger in Zoo" 
+         src="https://zooguadalajaramxa.imgix.net/animal/218/foto-one.jpeg" 
+         onmouseover="upDate(this)" onmouseout="unDo()" 
+         onfocus="upDate(this)" onblur="unDo()" tabindex="6">
+    
 </body>
 </html>
